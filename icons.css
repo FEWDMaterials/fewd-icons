@@ -1,0 +1,69 @@
+/**************************
+** START: TAQQUI KARIM
+**************************/
+/* 
+  SET CUSTOM TRANSITIONS WITHOUT HAVING TO CHANGE "CORE" STYLES 
+  DEMONSTRATING HOW A POTENTIAL USER CAN USE YOUR BASE ICON STYLES BUT CUSTOMIZE IT FOR HIS/HER OWN NEEDS
+*/
+.icon-holder.taqqui-karim div {
+  -webkit-transition: background-color 0.5s, border-top-left-radius 0.5s, border-top-right-radius 0.5s;
+}
+.icon-holder.taqqui-karim:hover div {
+  background-color:blue;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+}
+
+/***
+  HELPER CLASSES I WROTE TO SHOW HOW EASILY THE ICONS DIMENSIONS/OTHER PROPERTIES CAN BE CHANGED
+  JUST ADD THESE CLASSES TO ICON-HOLDER TO CHANGE COLORS OR DIMENSIONS, ETC
+**/
+.scale-fourth {
+  -webkit-transform: scale( 0.25, 0.25 );  
+}
+
+.scale-half {
+  -webkit-transform: scale( 0.5, 0.5 );
+}
+
+.scale-twice {
+    -webkit-transform: scale( 2.0, 2.0 );
+}
+/* 
+  CORE ICON STYLES
+  THESE SHOULD NEVER CHANGE, THEY ARE WRITTEN BY YOU
+  MAKE SURE YOU ALWAYS TARGET YOUR THINGS BY .ICON-HOLDER.[YOUR-NAME]
+  YOU CAN PUT AS MANY DIVS INSIDE YOUR ICON-HOLDER TO GET YOUR ICON TO WORK RIGHT
+*/
+
+.icon-holder.taqqui-karim {
+  /* dimensions should be in pixels here*/
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.icon-holder.taqqui-karim .left,
+.icon-holder.taqqui-karim .right {
+  /* dimensions are percentages here */
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: red;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.icon-holder.taqqui-karim .left {
+  -webkit-transform: rotate( -53deg );
+}
+
+.icon-holder.taqqui-karim .right {
+  -webkit-transform: rotate( 53deg ); 
+}
+
+/**************************
+** END: TAQQUI KARIM
+**************************/
